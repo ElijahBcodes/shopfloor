@@ -1,16 +1,27 @@
-# React + Vite
+# ShopFloor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A local-first CNC shop production board for tracking work orders, machine availability, and shift priorities.
 
-Currently, two official plugins are available:
+## What the prototype does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Shows active, queued, paused, and completed jobs with due dates, priority, machine assignment, operator initials, and progress.
+- Adds and edits work orders from a form.
+- Starts and completes jobs, and pauses or readies machines.
+- Filters the queue by status and searches by job, part, material, or machine.
+- Saves changes in the current browser with `localStorage`.
 
-## React Compiler
+The included work orders and machines are sample data. This prototype does not yet have a shared database, authentication, live machine telemetry, or multi-user synchronization.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run locally
 
-## Expanding the ESLint configuration
+```sh
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Checks
+
+```sh
+npm run lint
+npm run build
+```
