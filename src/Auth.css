@@ -1,0 +1,379 @@
+.access-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 18px;
+  color: #1d2828;
+  background:
+    radial-gradient(ellipse at 12% 10%, rgba(183, 220, 145, 0.25), transparent 38%),
+    #f5f7f4;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.access-card {
+  width: min(100%, 440px);
+  padding: 34px;
+  border: 1px solid #e3e9e1;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 18px 60px rgba(27, 42, 34, 0.08);
+}
+
+.access-brand {
+  margin: 0 0 36px -7px;
+  color: #20302b;
+}
+
+.access-card .eyebrow {
+  margin: 0 0 9px;
+  color: #6e8f50;
+  font-size: 10px;
+  font-weight: 760;
+  letter-spacing: 1.3px;
+}
+
+.access-card h1 {
+  margin: 0;
+  color: #1e2a28;
+  font-size: clamp(25px, 6vw, 31px);
+  font-weight: 690;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.access-copy {
+  margin: 11px 0 24px;
+  color: #718079;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.access-copy code {
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #4c6839;
+  background: #f1f6eb;
+  font-size: 11px;
+}
+
+.access-form {
+  display: grid;
+  gap: 15px;
+}
+
+.access-form .form-field {
+  display: grid;
+  gap: 7px;
+  color: #45534c;
+  font-size: 12px;
+  font-weight: 620;
+}
+
+.access-form .form-field input {
+  width: 100%;
+  min-height: 43px;
+  padding: 0 12px;
+  border: 1px solid #dfe6df;
+  border-radius: 7px;
+  outline: none;
+  color: #26322d;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 450;
+}
+
+.access-form .form-field input:focus {
+  border-color: #a9c78d;
+  box-shadow: 0 0 0 3px rgba(145, 189, 94, 0.12);
+}
+
+.access-form .form-field input::placeholder {
+  color: #a5aea8;
+}
+
+.access-submit {
+  width: 100%;
+  min-height: 43px;
+  justify-content: center;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.access-submit:disabled,
+.share-button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.access-switch {
+  margin: 20px 0 0;
+  color: #7c8982;
+  font-size: 12px;
+  text-align: center;
+}
+
+.access-switch button {
+  padding: 0;
+  border: 0;
+  color: #587d3c;
+  background: transparent;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.access-footnote {
+  margin: 22px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid #eef1ed;
+  color: #99a39d;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.access-message {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.error-message {
+  color: #8b3e34;
+  background: #fff1ee;
+}
+
+.success-message {
+  color: #4f7137;
+  background: #f0f7e9;
+}
+
+.access-loading {
+  color: #61706a;
+  font-size: 13px;
+}
+
+.setup-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin: 0 0 20px;
+  padding: 4px;
+  border-radius: 8px;
+  background: #f2f5f1;
+}
+
+.setup-tabs button {
+  min-height: 36px;
+  border: 0;
+  border-radius: 6px;
+  color: #78857d;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.setup-tabs button.selected {
+  color: #364830;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(29, 40, 40, 0.1);
+}
+
+.example-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e5ebe2;
+  border-radius: 8px;
+  color: #425047;
+  cursor: pointer;
+}
+
+.example-choice input {
+  width: 15px;
+  height: 15px;
+  margin: 2px 0 0;
+  accent-color: #6e9851;
+}
+
+.example-choice span {
+  display: grid;
+  gap: 3px;
+}
+
+.example-choice strong {
+  font-size: 11px;
+}
+
+.example-choice small,
+.field-hint {
+  color: #8b9790;
+  font-size: 10px;
+  font-weight: 450;
+  line-height: 1.45;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 1px;
+}
+
+.setup-required-card {
+  width: min(100%, 510px);
+}
+
+.app-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 10px 12px;
+  border: 1px solid #f1d3ca;
+  border-radius: 7px;
+  color: #8b3e34;
+  background: #fff6f3;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.app-alert button {
+  display: grid;
+  width: 23px;
+  height: 23px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 0;
+  border-radius: 5px;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.share-button {
+  min-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #dfe7d9;
+  border-radius: 6px;
+  color: #57743f;
+  background: #fbfdf9;
+  font-size: 10px;
+  font-weight: 620;
+  cursor: pointer;
+}
+
+.share-button:hover {
+  background: #f1f7ea;
+}
+
+.invite-modal {
+  width: min(100%, 450px);
+  padding: 23px;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(13, 27, 22, 0.22);
+}
+
+.invite-modal h2 {
+  margin: 0;
+  color: #26322d;
+  font-size: 19px;
+  letter-spacing: -0.4px;
+}
+
+.invite-copy {
+  margin: 18px 0;
+  color: #78857d;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.invite-code {
+  display: block;
+  overflow-wrap: anywhere;
+  padding: 13px;
+  border: 1px dashed #cfddc3;
+  border-radius: 7px;
+  color: #405b32;
+  background: #f7faf4;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  user-select: all;
+}
+
+.invite-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.machine-empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  padding: 35px 16px;
+  color: #748179;
+  text-align: center;
+}
+
+.machine-empty-state strong {
+  color: #45544b;
+  font-size: 12px;
+}
+
+.machine-empty-state p {
+  margin: 0 0 7px;
+  font-size: 10px;
+}
+
+.machine-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.machine-edit {
+  min-height: 30px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 5px;
+  color: #708078;
+  background: transparent;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.machine-edit:hover {
+  color: #476438;
+  background: #f3f7ef;
+}
+
+@media (max-width: 680px) {
+  .access-card {
+    padding: 27px 22px;
+  }
+
+  .access-brand {
+    margin-bottom: 30px;
+  }
+
+  .share-button {
+    min-height: 28px;
+    padding: 0 7px;
+    font-size: 9px;
+  }
+
+  .sample-label {
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .invite-modal {
+    padding: 19px;
+  }
+}
