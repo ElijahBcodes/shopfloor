@@ -97,6 +97,7 @@ select:focus-visible {
 }
 
 .workspace-switcher {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -152,6 +153,20 @@ select:focus-visible {
 
 .workspace-switcher > svg {
   color: #94a09a;
+}
+
+.workspace-switcher select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.workspace-switcher:focus-within {
+  outline: 3px solid rgba(125, 174, 80, 0.45);
+  outline-offset: 2px;
 }
 
 .nav-label {
@@ -309,8 +324,20 @@ select:focus-visible {
 }
 
 .profile-menu {
+  display: grid;
+  width: 27px;
+  height: 27px;
+  place-items: center;
+  border: 0;
+  border-radius: 5px;
   color: #aab4ad;
-  letter-spacing: 1px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.profile-menu:hover {
+  color: #e4ebdf;
+  background: #2b3934;
 }
 
 .main-area {
@@ -1544,7 +1571,7 @@ select:focus-visible {
   }
 
   .topbar-right {
-    gap: 9px;
+    gap: 7px;
   }
 
   .sample-label {
